@@ -2,17 +2,17 @@
 # vi: set ft=ruby :
 
 # Set HashiCorp Software Versions
-vault_version           = "1.6.2"
-consul_version          = "1.9.3"
-nomad_version           = "1.0.3"
-terraform_version       = "0.14.6"
-packer_version          = "1.6.6"
-consul_template_version = "0.25.1"
-envconsul_version       = "0.11.0"
+vault_version           = ENV['vault_version']           || '1.6.2'
+consul_version          = ENV['consul_version']          || '1.9.3'
+nomad_version           = ENV['nomad_version']           || '1.0.3'
+terraform_version       = ENV['terraform_version']       || '0.14.6'
+packer_version          = ENV['packer_version']          || '1.6.6'
+consul_template_version = ENV['consul_template_version'] || '0.25.1'
+envconsul_version       = ENV['envconsul_version']       || '0.11.0'
 
-vault_enterprise        = 'ent.hsm'
-consul_enterprise       = 'ent'
-nomad_enterprise        = 'ent'
+vault_enterprise        = ENV['vault_enterprise']        || '' # set to 'ent' to install Vault Enterprise or 'ent.hsm' to instsall Vault Enterprise with HSM support; leave it blank for Vault Open Source.
+consul_enterprise       = ENV['consul_enterprise']       || '' # set to 'ent' to install Consul Enterprise
+nomad_enterprise        = ENV['nomad_enterprise']        || '' # set to 'ent' to install Nomad Enterprise
 
 # The rest of these variables can be set as is, but override as needed.
 install_dir             = '/usr/local/bin'
