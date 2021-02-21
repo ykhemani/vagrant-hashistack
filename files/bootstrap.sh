@@ -11,6 +11,8 @@ sudo apt-get install -y \
   jq \
   unzip \
   htop \
+  avahi-daemon \
+  libnss-mdns \
   ldap-utils \
   libltdl7 \
   libsofthsm2 \

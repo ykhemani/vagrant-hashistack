@@ -4,9 +4,9 @@ Vagrantfile for creating a [Vagrant](https://vagrantup.com) box based on [ubuntu
 * [Vault](https://vaultproject.io) 1.6.2
 * [Consul](https://consul.io) 1.9.3
 * [Nomad](https://nomadproject.io) 1.0.3
-* [Terraform](https://terraform.io) 0.14.6
-* [Packer](https://packer.io) 1.6.6
-* [consul-template](https://github.com/hashicorp/consul-template) 0.25.1
+* [Terraform](https://terraform.io) 0.14.7
+* [Packer](https://packer.io) 1.7.0
+* [consul-template](https://github.com/hashicorp/consul-template) 0.25.2
 * [envconsul](https://github.com/hashicorp/envconsul) 0.11.0
 
 ## Software Versions and Enterprise Support
